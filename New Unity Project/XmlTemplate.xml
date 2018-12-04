@@ -1,0 +1,22 @@
+<Menu>
+	<Sections>
+		<Section>
+			<SectionName>
+				
+			</SectionName>
+			<Dishes>
+				<Dish>
+					<DishName>
+						
+					</DishName>
+					<ModelPath>
+						
+					</ModelPath>
+					<Price>
+						
+					</Price>
+				</Dish>
+			</Dishes>
+		</Section>
+	</Sections>
+</Menu>

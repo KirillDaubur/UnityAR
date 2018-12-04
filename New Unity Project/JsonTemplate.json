@@ -1,0 +1,14 @@
+{
+	""Sections"": [
+		{
+			""SectionName"": ""section 1"",
+			""Dishes"": [
+					{
+						""DishName"": ""Dish 1"",
+						""ModelPath"": ""cube"",
+						""Price"": 1.25
+					}
+			]
+		}
+	]	
+}
