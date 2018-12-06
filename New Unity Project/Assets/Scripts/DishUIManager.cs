@@ -12,10 +12,21 @@ public class DishUIManager : MonoBehaviour {
     private Text nameText;
     private Text priceText;
     	
-	void Start () {
+	void Awake () {
         canvas = GameObject.Find("MenuItemCanvas");
+        if (canvas != null)
+        {
+            CanvasScaler canvasScaler = canvas.GetComponent<CanvasScaler>();
+            if (canvasScaler != null)
+            {
+                canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            }
+        }
+
         nameText = GameObject.Find("DishNameText").GetComponent<Text>();
         priceText = GameObject.Find("PriceText").GetComponent<Text>();
+
+        canvas.SetActive(false);
     }
 
     public void FillData(string name, float price)

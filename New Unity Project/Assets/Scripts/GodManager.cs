@@ -8,10 +8,10 @@ public class GodManager : MonoBehaviour {
 
     public string jsonInput;
 
-    private SectionManager sectionManager;
+    private MainMenuManager mainMenuManager;
 
-	void Start () {
-        sectionManager = GameObject.Find("SectionManager").GetComponent<SectionManager>();
+	void Awake () {
+        mainMenuManager = GameObject.Find("MainMenuManager").GetComponent<MainMenuManager>();
 
         SetTempData();
 
@@ -55,7 +55,7 @@ public class GodManager : MonoBehaviour {
 
     private void SetComponentsData()
     {
-        sectionManager.FillData(JsonUtility.FromJson<Menu>(jsonInput));
+        mainMenuManager.FillData(JsonUtility.FromJson<Menu>(jsonInput).Sections);
     }
 }
 
