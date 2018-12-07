@@ -63,11 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DishListSectionManager.cs" />
+    <Compile Include="Assets\Scripts\DishSlider.cs" />
     <Compile Include="Assets\Scripts\DishUIManager.cs" />
     <Compile Include="Assets\Scripts\GodManager.cs" />
-    <Compile Include="Assets\Scripts\HorizontalSwipe.cs" />
-    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
-    <Compile Include="Assets\Scripts\SectionManager.cs" />
+    <Compile Include="Assets\Scripts\MenuSectionManager.cs" />
     <Compile Include="Assets\Scripts\SwipeBehavior.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

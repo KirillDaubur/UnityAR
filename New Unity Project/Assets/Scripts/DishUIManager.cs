@@ -13,7 +13,7 @@ public class DishUIManager : MonoBehaviour {
     private Text priceText;
     	
 	void Awake () {
-        canvas = GameObject.Find("MenuItemCanvas");
+        canvas = GameObject.Find("DishListSectionCanvas");
         if (canvas != null)
         {
             CanvasScaler canvasScaler = canvas.GetComponent<CanvasScaler>();
@@ -29,7 +29,7 @@ public class DishUIManager : MonoBehaviour {
         canvas.SetActive(false);
     }
 
-    public void FillData(string name, float price)
+    public void Activate(string name, float price)
     {
         DishName = name;
         DishPrice = String.Format("Price: {0} UAH", String.Format("{0:0.00}", price));
@@ -38,5 +38,10 @@ public class DishUIManager : MonoBehaviour {
         priceText.text = DishPrice;
 
         canvas.SetActive(true);
+    }
+
+    public void Deactivate()
+    {
+        canvas.SetActive(false);
     }
 }
